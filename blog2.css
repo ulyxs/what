@@ -1,0 +1,375 @@
+@font-face {
+    font-family: GT Alpina Typewriter Italics;
+    src: url(Fonts/GT-Alpina-Typewriter-Light-Italic-Trial.otf) format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GT Alpina Typewriter Medium Italics;
+    src: url(Fonts/GT-Alpina-Typewriter-Medium-Italic-Trial.otf);
+    font-weight: 500;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Mabry Pro;
+    src: url(Fonts/Mabry\ Pro.ttf), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: #fff7e1;
+}
+
+.siteWrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* BLOG */ 
+
+#Menu {
+    position: fixed;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid black;
+    
+    background-color: #fff7e1;
+
+    height: 111px;
+}
+
+#footer {
+    background-color: #fff7e1;
+}
+
+#blogWrapper{
+
+
+    background-image: url(Images/BlogWrapperBackgroundPattern.svg);
+    background-size: 120px auto;
+}
+
+#blogSpot{
+    padding-top: 111px;
+    background-color: #fff7e1;
+
+    margin: auto;
+    width: 1000px;
+
+    padding-bottom: 70px;
+}
+
+#blogspotDetail{
+    width: 850px;
+    
+    padding-top: 30px;
+    margin: auto;
+}
+
+#toc-container {
+   margin-top: 25px;
+
+    position: fixed; 
+    top: 100px; 
+    right: 26px; 
+    width: 200px; 
+
+    background-color: #fff7e1; 
+    border: 3px solid #000; 
+    border-radius: 12px;  
+    overflow: hidden; 
+}
+
+#toc-table {
+    width: 217px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #e0e782;
+
+    font-size: 15px;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+#toc-header th {
+    padding-left: 3px;
+}
+
+#toc-header td {
+    text-align: center;
+}
+
+#toc-header {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    background-color: #fff7e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#toc-list {
+    margin: 0;
+
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 38px;
+}
+
+#toc-list li {
+    padding: 5px 0;
+    position: relative; 
+}
+
+#toc-list a {
+    font-size: 15px;
+
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-family: monospace;
+}
+
+
+/* Blog Title, Image, and Description */
+
+#blogTitle{
+    font-family: "Mabry Pro";
+    font-weight: normal;
+    font-size: 45px;
+    text-decoration: underline;
+
+    text-align: center;
+}
+
+#blogDescription{
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    font-family: "Roboto Mono";
+    font-size: 17px;
+    text-align: center;
+}
+
+#blogArtimg{
+    width: 850px;
+    height: auto;
+
+    border-radius: 35px;
+    border: 3px solid #000000;
+}
+
+/* Blog Text Container */
+
+#blogTextMain {
+    padding-top: 15px;
+    width: 850px;
+    margin: auto;
+    
+    font-family: "Roboto Mono";
+    font-size: 16px;
+}
+
+#blogtableDate {
+    width: 850px;
+    table-layout: fixed;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    margin-bottom: 15px;
+}
+
+#blogTextlist1{
+    border: 1px solid black;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 50px;
+}
+
+#blogTextpara1{
+    padding-top: 16px;
+}
+
+#blogTextchap1, #blogTextchap2, #blogTextchap3, #blogTextchap4{
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+}
+
+#blogTextcapsule{
+    border: 1px solid black;
+    border-radius: 9px;
+
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#blogtable1, #blogtable2 {
+    width: 850px;
+    table-layout: fixed;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+
+    font-family: "Roboto Mono";
+}
+
+#blogtable1 th,
+#blogtable1 td,
+#blogtable2 th,
+#blogtable2 td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+#blogtable1 th, #blogtable2 th{
+    text-align: left;
+    vertical-align: top;
+}
+
+#blogTextlist2, #blogTextlist3 {
+    padding-left: 50px;
+}
+
+#blogTextlist3 {
+    padding-bottom: 16px;
+}
+
+#blog2pic1img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 450px;
+    height: auto;
+
+    border-radius: 25px;
+    border: 3px solid #000000;
+
+    margin-bottom: 16px;
+    
+}
+
+#blogTextlist4 li, #blogTextlist5 li, #blogTextlist6 li, #blogTextlist7 li, #blogTextlist8 li{
+    margin-left: 50px;
+}
+
+#blogTextpara5, #blogTextpara6, #blogTextpara7 {
+    padding-bottom: 16px;
+}
+
+#blogbackbutton:visited, #blogbackbutton:link {
+    color: black;
+    text-decoration: none;
+}
+
+#buttonDivider {
+    text-align: right;
+}
+
+#blogbackbutton {
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    display: inline-block;
+
+    padding: 10px 30px;
+    border: 2px solid #000000;
+    border-radius: 90%;
+
+    background-color: #96a8d6;
+
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#blogbackbutton:hover {
+    box-shadow: 
+    0 0 10px rgba(150, 168, 214, 0.8), 
+    0 0 20px rgba(150, 168, 214, 0.6), 
+    0 0 30px rgba(150, 168, 214, 0.4); 
+    
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #798ebc; 
+
+}
+
+#bogbutton:hover {
+    cursor: grabbing; 
+    transform: translateY(1px); 
+    box-shadow: none;
+}
+
+#blogtableReference {
+    width: 850px;
+    table-layout: fixed;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    margin-bottom: 15px;
+
+    padding-left: 17px;
+}
+
+#blogTextlist9 {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+#blogTextlist9 li {
+
+    padding-left: 20px; 
+    position: relative; 
+}
+
+#blogTextlist9 li::before {
+    content: "";
+    display: inline-block;
+    
+    width: 12px;
+    height: 12px;
+    background-image: url("Images/ExternalLinkIcon.svg");
+   
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    position: absolute;
+    left: 0;
+
+    top: 0.25em;
+}
